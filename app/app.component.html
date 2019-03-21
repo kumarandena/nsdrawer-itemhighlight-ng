@@ -1,0 +1,57 @@
+<RadSideDrawer drawerTransition="PushTransition">
+
+        <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
+            <StackLayout class="sidedrawer-header">
+                <Label class="sidedrawer-header-text var" text="User Name"></Label>
+                <Label class="sidedrawer-header-footnote var" text="username@mail.com"></Label>
+            </StackLayout>
+
+            <ScrollView row="1">
+                <StackLayout class="sidedrawer-content">
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                        title="Home" tap="onNavigationItemTap">
+                        <Label row="0" col="0" text="&#xf015;" class="fa sidedrawer-item"></Label>
+                        <Label row="0" col="1" text="HOME" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+
+                    <StackLayout class="hr-light"></StackLayout>
+
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item sidedrawer-list-item-active"
+                        title="Settings" tap="onNavigationItemTap">
+                        <Label row="0" col="0" text="&#xf013;" class="fa sidedrawer-item"></Label>
+                        <Label row="0" col="1" text="SETTINGS" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+
+                    <StackLayout class="hr-light"></StackLayout>
+
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                        title="Search" tap="onNavigationItemTap">
+                        <Label row="0" col="0" text="&#xf002;" class="fa sidedrawer-item"></Label>
+                        <Label row="0" col="1" text="SEARCH" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+
+                    <StackLayout class="hr-light"></StackLayout>
+
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                        title="Camera" tap="onNavigationItemTap">
+                        <Label row="0" col="0" text="&#xf030;" class="fa sidedrawer-item"></Label>
+                        <Label row="0" col="1" text="CAMERA" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+
+                    <StackLayout class="hr-light"></StackLayout>
+
+                    <GridLayout columns="auto, *" class="sidedrawer-list-item"
+                        title="Store" tap="onNavigationItemTap">
+                        <Label row="0" col="0" text="&#xf07a;" class="fa sidedrawer-item"></Label>
+                        <Label row="0" col="1" text="STORE" class="var m-l-10 sidedrawer-item"></Label>
+                    </GridLayout>
+
+                    <StackLayout class="hr-light"></StackLayout>
+
+                </StackLayout>
+            </ScrollView>
+        </GridLayout>
+
+        <page-router-outlet tkMainContent class="page page-content"></page-router-outlet>
+
+</RadSideDrawer>
