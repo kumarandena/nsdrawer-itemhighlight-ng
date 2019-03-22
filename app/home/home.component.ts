@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import * as app from "tns-core-modules/application";
-import { isAndroid } from "tns-core-modules/platform";
+import { Page } from "tns-core-modules/ui/page";
 
 @Component({
     selector: "Home",
@@ -11,13 +11,10 @@ import { isAndroid } from "tns-core-modules/platform";
 })
 export class HomeComponent implements OnInit {
 
-    actionAndroid;
-
-    constructor() {
-        this.actionAndroid = isAndroid;
-    }
+    constructor(private page: Page) {}
 
     ngOnInit(): void {
+        this.page.actionBarHidden = true;
     }
 
     onDrawerButtonTap(): void {
