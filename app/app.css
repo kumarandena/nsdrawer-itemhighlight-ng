@@ -1,0 +1,62 @@
+@import '~nativescript-theme-core/css/core.light.css';
+
+.fa {
+    font-family: "FontAwesome";
+}
+
+.var {
+    font-family: "Varela", "varela-regular";
+}
+
+.action-bar {
+    background-color: #191919;
+}
+
+.ab-icon {
+    color: white;
+}
+
+.page-content {
+    background-image: url("https://placem.at/places?random=11&h=1500&txt=0");
+    background-size: cover;
+}
+
+.hr-light {
+    background-color: #444444;
+}
+
+.sidedrawer {
+    background-color: #222222;
+}
+
+.sidedrawer-header {
+    background-image: url("https://placem.at/places?random=21&w=500&txt=0");
+    background-size: cover;
+}
+
+.sidedrawer-header-text {
+    color: white;
+    font-size: 22;
+    font-weight: 800;
+    margin-top: 60;
+}
+
+.sidedrawer-header-footnote {
+    color: white;
+}
+
+.sidedrawer-list-item {
+    color: white;
+    padding-left: 30;
+    font-size: 18;
+    height: 80;
+}
+
+.sidedrawer-item {
+    vertical-align:center;
+}
+
+.sidedrawer-list-item-active {
+    background-color: #a6a450;
+}
+ 
